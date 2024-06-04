@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "smoothies-login",
+  "name": "node-authentication-with-jwt-aswathy",
   "routes": [
     { "src": "/(.*)", "dest": "/app.js" }
   ]
