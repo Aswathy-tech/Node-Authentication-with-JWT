@@ -43,3 +43,4 @@ app.use(authRoutes);
 //  res.json(cookies);
 //
 //});
+module.exports = app;
