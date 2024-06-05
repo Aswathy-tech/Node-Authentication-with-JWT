@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/authRoutes');
 const cookieParser = require('cookie-parser');
+const path = require('path'); 
 const { requireAuth, checkUser } = require('./middleware/authMiddleware');
 
 
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // view engine
+app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // database connection
